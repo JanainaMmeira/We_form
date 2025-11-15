@@ -94,6 +94,8 @@
     font-size: 2rem;
   }
 
+
+
   /* --- FORMULÁRIO --- */
   main form label {
     font-size: 1.7rem;
@@ -165,34 +167,6 @@
 }
 
 /*Rodapé - assinatura*/
-
-.JanainaMeira {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  padding: 1rem 0;
-  font-size: 1.3rem;
-  z-index: 1000;
-   background: linear-gradient(
-    135deg,
-    rgb(0, 123, 255),
-    rgb(138, 43, 226),
-    rgb(255, 0, 255),
-    rgb(255, 182, 255)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text; 
-  color: transparent; 
-}
-
-.JanainaMeira a {
-  color: #000;
-  text-decoration: underline;
-  margin-left: 0.25rem;
-}
 
 .site-header {
   top: 0.01rem;

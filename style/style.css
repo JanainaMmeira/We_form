@@ -223,6 +223,10 @@ aside.aside-entidades div {
     justify-content: center;
 }
 
+.fa-solid fa-angle-left {
+    width: 50px;
+}
+
 /*Linha de quebra*/
 
 hr {
@@ -256,7 +260,6 @@ a.entidade-link:hover {
 
 /*--- rodapé com assinatura --- */
 
-/* Rodapé fixo SEM ocupar espaço */
 .JanainaMeira {
   bottom: 0;
   left: 0;
@@ -279,24 +282,23 @@ a.entidade-link:hover {
 }
 
 .JanainaMeira a {
-  color: #000;
   text-decoration: underline;
   margin-left: 0.25rem;
+  font-weight: bolder;
 }
 
 /* logo Janaina*/
 
-/* === Cabeçalho com logo no topo-direita === */
 .site-header {
-  position: absolute; /* ou fixed, veja nota abaixo */
+  position: absolute; 
   top: 1.2rem;
   right: 1.2rem;
   z-index: 100;
 }
 
 .logo {
-  height: 16rem; /* ajuste conforme sua logo */
+  height: 16rem; 
   width: auto;
-  max-width: 150px; /* evita estouro em telas pequenas */
+  max-width: 150px; 
   display: block;
 }
