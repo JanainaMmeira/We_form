@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem;
+
+}
+
+.content {
+    display: grid;
+    grid-template-areas: 
+     ". . . . ."
+     ". . . . ."
+    ". hero . form ."
+    ". hero . form ."
+    ". . . . ."
+    ;
+    gap: 8.5rem;
+}
+main {
+    grid-area: form;
+}
+
+aside {
+    grid-area: hero;
+}
+
+:root {
+    --span-color: #fF5678; /*Cor do span */
+    --actions-gbcolor: #35E6E9;
+    --color-padrao: #000;
+    --second-color: #fff;
+    font-size: 62.4%;
+    --border-default: 0.1rem solid rgb(0, 0, 0, 0.15);
+    --border-radius-default: 1.2rem;
+}
+
+aside img {
+    height: 450px;
+    border-radius: 40%;
+}
+
+aside h1 {
+    
+    font-size: 6.4rem;
+    font-weight: 500;
+    line-height: 4.6rem;
+}
+
+aside h1 span, main h2 span, main p span {
+    color: var(--span-color);
+}
+
+
+main {
+    width: 60rem;
+    height: 52rem;
+    border: var(--border-default);
+    border-radius: var(--border-radius-default);
+    padding: 4.4rem 5.7rem;
+    position: relative;
+}
+
+main h2 {
+    max-width: 43rem;
+    font-size: 3.6rem;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+main .actions {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+main .actions a {
+    border-radius: 1.2rem;
+    text-decoration: none;
+    font-size: 2.4rem;
+    height: 5.5rem;
+    background-color: var(--actions-gbcolor);
+    color: var(--second-color);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5.4rem;
+}
+
+main .actions a + a {
+    background-color: var(--span-color);
+    margin-top: 4.8rem;
+}
+
+main footer p {
+    font-size: 1.6rem;
+    margin-top: 8rem;
+}
+
+main footer a {
+    color: var(--color-padrao);
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+/*Estilização da segunda página*/
+
+main header {
+    display: flex;
+    gap: 1.8rem;
+    align-items: center;
+}
+
+
+main header i {
+    font-size: 2.4rem;
+    color: var(--span-color);
+}
+
+main form {
+    margin-top: 1.6rem;
+}
+
+main form label {
+    font-size:  1.8rem;
+    font-weight: 400;
+    text-transform: lowercase;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+main form input, main form select {
+    width: 489px;
+    height: 5.5rem;
+
+    background: var(--second-color);
+    border: var(--border-default);
+    border-radius: var(--border-radius-default);
+}
+
+main form select {
+    appearance: none;
+}
+
+main form .selectdiv {
+    position: relative;
+}
+
+main form .selectdiv::after {
+    top: 1.2rem;
+    right: 1.2rem;
+    font-size: 3.4rem;
+    content: '\f107';
+    font-family: 'Font Awesome 7 Free';
+    font-weight: 600;
+    position: absolute;
+    z-index: 1;
+
+    color: var(--actions-gbcolor);
+
+}
+
+main form .points {
+    position: relative;
+}
+
+main form input + button {
+    position: absolute;
+    right: -4.8rem;
+    top: calc(2.7rem + 2.3rem);
+    background-color: transparent;
+    border: none;
+    color: var(--actions-gbcolor);
+    font-size: 2.4rem;
+    cursor: pointer;
+}
+
+/*Estilização da página CAMPO DE ATUAÇÃO*/
+
+div h3, p span {
+display: flex;
+justify-content: center;
+}
+
+div h3 {
+    margin-top: 2rem;
+}
+
+div p {
+    margin-bottom: 2rem;
+}
+
+/*Estilização da página de Entidades cadastradas*/
+
+main .aside-weForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+aside.aside-entidades {
+    margin-top: 3rem;
+}
+
+aside.aside-entidades div {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;   
+}
+
+.entidade-name, .entidade-button, .entidade-link {
+    flex-direction: column;
+    justify-content: space-around;   
+    justify-content: center;
+}
+
+/*Linha de quebra*/
+
+hr {
+   border: none;
+    background: whitesmoke;
+  height: 2px;
+  margin: 20px 0;
+  width: 100%;
+}
+
+button.entidade-button {
+    width: 200px;
+    color: var(--actions-gbcolor);
+    background-color: var(--second-color);
+    border: 0.2rem solid var(--actions-gbcolor);
+    border-radius: 0.70rem;
+    font-weight: 700;
+
+}
+
+a.entidade-link {
+    color: var(--span-color);
+    font-size: 1.9rem;
+    margin-top: 1.04rem;
+}
+
+a.entidade-link:hover {
+    text-decoration: none;
+    font-size: 2.8rem;
+}
+
+/*--- rodapé com assinatura --- */
+
+/* Rodapé fixo SEM ocupar espaço */
+.JanainaMeira {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1.3rem;
+  z-index: 1000;
+   background: linear-gradient(
+    135deg,
+    rgb(0, 123, 255),
+    rgb(138, 43, 226),
+    rgb(255, 0, 255),
+    rgb(255, 182, 255)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; 
+  color: transparent; 
+}
+
+.JanainaMeira a {
+  color: #000;
+  text-decoration: underline;
+  margin-left: 0.25rem;
+}
+
+/* logo Janaina*/
+
+/* === Cabeçalho com logo no topo-direita === */
+.site-header {
+  position: absolute; /* ou fixed, veja nota abaixo */
+  top: 1.2rem;
+  right: 1.2rem;
+  z-index: 100;
+}
+
+.logo {
+  height: 16rem; /* ajuste conforme sua logo */
+  width: auto;
+  max-width: 150px; /* evita estouro em telas pequenas */
+  display: block;
+}

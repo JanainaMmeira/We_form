@@ -1,0 +1,206 @@
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 56%; 
+  }
+
+  body {
+    font-size: 1.6rem; 
+  }
+
+  /* --- RESET DE LAYOUT PRINCIPAL --- */
+  .content {
+    display: block; 
+    padding: 2rem 1.5rem;
+    gap: 0;
+  }
+
+  main,
+  aside {
+    grid-area: auto; 
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* --- ASIDE (HERO) --- */
+  aside {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  aside img {
+    height: auto;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+  }
+
+  aside h1 {
+    font-size: 4.2rem; 
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  /* --- MAIN (FORMULÁRIO / CONTEÚDO) --- */
+  main {
+    width: 100%;
+    height: auto;
+    padding: 2.4rem 1.8rem;
+    border-radius: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  main h2 {
+    font-size: 2.8rem; 
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  /* --- BOTÕES DE AÇÃO --- */
+  main .actions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  main .actions a {
+    height: 5rem;
+    font-size: 2rem;
+    margin-top: 0; 
+  }
+
+  main .actions a + a {
+    margin-top: 1rem;
+  }
+
+  /* --- FOOTER DO MAIN --- */
+
+  main footer p {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  main footer a {
+    font-size: 1.7rem;
+    margin-top: 1rem;
+  }
+
+  /* --- Cabeçalho com ícone (ex: Voltar) --- */
+  main header {
+    gap: 1.2rem;
+  }
+
+  main header i {
+    font-size: 2rem;
+  }
+
+  /* --- FORMULÁRIO --- */
+  main form label {
+    font-size: 1.7rem;
+    margin-bottom: 0.8rem;
+  }
+
+  main form input,
+  main form select {
+    width: 100%;
+    height: 5rem;
+    font-size: 1.6rem;
+    padding: 0 1.2rem;
+  }
+
+  /* Ícone do select */
+  main form .selectdiv::after {
+    top: 1.3rem;
+    right: 1.2rem;
+    font-size: 2.4rem;
+  }
+
+  /* Botão ao lado do input (olho, etc) */
+  main form input + button {
+    right: 0.5rem;
+    top: 55%;
+    font-size: 2rem;
+  }
+
+  /* --- PÁGINA: CAMPO DE ATUAÇÃO --- */
+  div h3 {
+    font-size: 2.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  div p {
+    font-size: 1.6rem;
+    margin-bottom: 1.8rem;
+  }
+
+  /* --- ENTIDADES --- */
+
+    main aside.aside-weForm {
+        display: none;
+    }
+
+
+    aside.aside-entidades div {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+ 
+  button.entidade-button {
+    width: 100%;
+    padding: 0.9rem;
+   }
+
+ 
+  a.entidade-link:hover {
+    text-decoration: none;
+    font-size: 2rem;
+  }
+
+  /* --- Linha horizontal --- */
+  hr {
+    margin: 1.8rem 0;
+    width: 100%;
+  }
+}
+
+/*Rodapé - assinatura*/
+
+.JanainaMeira {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1.3rem;
+  z-index: 1000;
+   background: linear-gradient(
+    135deg,
+    rgb(0, 123, 255),
+    rgb(138, 43, 226),
+    rgb(255, 0, 255),
+    rgb(255, 182, 255)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; 
+  color: transparent; 
+}
+
+.JanainaMeira a {
+  color: #000;
+  text-decoration: underline;
+  margin-left: 0.25rem;
+}
+
+.site-header {
+  top: 0.01rem;
+  left: 0.01rem;
+  z-index: 100;
+}
+
+.logo {
+  height: 10rem; /* ajuste conforme sua logo */
+  border-radius: 50%;
+}
