@@ -50,7 +50,7 @@
     margin-bottom: 2rem;
   }
 
-  main h2 {
+  h2 {
     font-size: 2.8rem; 
     max-width: 100%;
     margin-bottom: 1.5rem;
@@ -86,24 +86,24 @@
   }
 
   /* --- Cabeçalho com ícone (ex: Voltar) --- */
-  main header {
+   header {
     gap: 1.2rem;
   }
 
-  main header i {
+   header i {
     font-size: 2rem;
   }
 
 
 
   /* --- FORMULÁRIO --- */
-  main form label {
+  form label {
     font-size: 1.7rem;
     margin-bottom: 0.8rem;
   }
 
-  main form input,
-  main form select {
+   form input,
+   form select {
     width: 100%;
     height: 5rem;
     font-size: 1.6rem;
@@ -111,33 +111,34 @@
   }
 
   /* Ícone do select */
-  main form .selectdiv::after {
+  .selectdiv::after {
     top: 1.3rem;
     right: 1.2rem;
     font-size: 2.4rem;
   }
 
   /* Botão ao lado do input (olho, etc) */
-  main form input + button {
+ form input + button {
     right: 0.5rem;
     top: 55%;
     font-size: 2rem;
   }
 
   /* --- PÁGINA: CAMPO DE ATUAÇÃO --- */
-  div h3 {
+  
+  h3 {
     font-size: 2.4rem;
     margin-bottom: 0.5rem;
   }
-
-  div p {
+  
+  p {
     font-size: 1.6rem;
     margin-bottom: 1.8rem;
   }
 
   /* --- ENTIDADES --- */
 
-    main aside.aside-weForm {
+    .aside-weForm {
         display: none;
     }
 

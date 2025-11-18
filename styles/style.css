@@ -63,7 +63,7 @@ main {
     position: relative;
 }
 
-main h2 {
+h2 {
     max-width: 43rem;
     font-size: 3.6rem;
     font-weight: 500;
@@ -111,23 +111,23 @@ main h2 {
 
 /*Estilização da segunda página*/
 
-main header {
+ header {
     display: flex;
     gap: 1.8rem;
     align-items: center;
 }
 
 
-main header i {
+ header i {
     font-size: 2.4rem;
     color: var(--span-color);
 }
 
-main form {
+ form {
     margin-top: 1.6rem;
 }
 
-main form label {
+ form label {
     font-size:  1.8rem;
     font-weight: 400;
     text-transform: lowercase;
@@ -135,7 +135,7 @@ main form label {
     display: block;
 }
 
-main form input, main form select {
+ form input, form select {
     width: 489px;
     height: 5.5rem;
 
@@ -144,15 +144,15 @@ main form input, main form select {
     border-radius: var(--border-radius-default);
 }
 
-main form select {
+form select {
     appearance: none;
 }
 
-main form .selectdiv {
+form .selectdiv {
     position: relative;
 }
 
-main form .selectdiv::after {
+form .selectdiv::after {
     top: 1.2rem;
     right: 1.2rem;
     font-size: 3.4rem;
@@ -166,11 +166,11 @@ main form .selectdiv::after {
 
 }
 
-main form .points {
+form .points {
     position: relative;
 }
 
-main form input + button {
+form input + button {
     position: absolute;
     right: -4.8rem;
     top: calc(2.7rem + 2.3rem);
@@ -183,33 +183,33 @@ main form input + button {
 
 /*Estilização da página CAMPO DE ATUAÇÃO*/
 
-div h3, p span {
+ h3, p span {
 display: flex;
 justify-content: center;
 }
 
-div h3 {
+ h3 {
     margin-top: 2rem;
 }
 
-div p {
+ p {
     margin-bottom: 2rem;
 }
 
 /*Estilização da página de Entidades cadastradas*/
 
-main .aside-weForm {
+.aside-weForm {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 2rem;
 }
 
-aside.aside-entidades {
+.aside-entidades {
     margin-top: 3rem;
 }
 
-aside.aside-entidades div {
+.aside-entidades div {
     display: flex; 
     flex-direction: row;
     justify-content: space-around;   
