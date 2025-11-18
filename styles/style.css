@@ -10,14 +10,13 @@ body {
 
 }
 
-.content {
+.hero {
     display: grid;
     grid-template-areas: 
      ". . . . ."
+     ". hero . form ."
+     ". hero . form ."
      ". . . . ."
-    ". hero . form ."
-    ". hero . form ."
-    ". . . . ."
     ;
     gap: 8.5rem;
 }
@@ -39,19 +38,18 @@ aside {
     --border-radius-default: 1.2rem;
 }
 
-aside img {
+img.image_hero {
     height: 450px;
     border-radius: 40%;
 }
 
-aside h1 {
-    
+.title {
     font-size: 6.4rem;
     font-weight: 500;
     line-height: 4.6rem;
 }
 
-aside h1 span, main h2 span, main p span {
+.title span, .title_form span, main p span {
     color: var(--span-color);
 }
 
@@ -73,12 +71,12 @@ main h2 {
 
 }
 
-main .actions {
+.actions {
     display: flex;
     flex-flow: column wrap;
 }
 
-main .actions a {
+.actions a {
     border-radius: 1.2rem;
     text-decoration: none;
     font-size: 2.4rem;
@@ -92,17 +90,17 @@ main .actions a {
     margin-top: 5.4rem;
 }
 
-main .actions a + a {
+.actions a + a {
     background-color: var(--span-color);
     margin-top: 4.8rem;
 }
 
-main footer p {
+.footer_registro p {
     font-size: 1.6rem;
     margin-top: 8rem;
 }
 
-main footer a {
+.footer_registro a{
     color: var(--color-padrao);
     margin-top: 1rem;
     font-size: 1.8rem;
@@ -260,28 +258,27 @@ a.entidade-link:hover {
 
 /*--- rodapé com assinatura --- */
 
-.JanainaMeira {
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  padding: 1rem 0;
+.assinatura_rodape {
+bottom: 0;
+left: 0;
+width: 100%;
+text-align: center;
+padding: 1rem 0;
+z-index: 1000;
   font-size: 1.3rem;
-  z-index: 1000;
-   background: linear-gradient(
+  background: linear-gradient(
     135deg,
     rgb(0, 123, 255),
     rgb(138, 43, 226),
     rgb(255, 0, 255),
     rgb(255, 182, 255)
   );
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text; 
   color: transparent; 
 }
 
-.JanainaMeira a {
+.assinatura_rodape a {
   text-decoration: underline;
   margin-left: 0.25rem;
   font-weight: bolder;
@@ -289,16 +286,16 @@ a.entidade-link:hover {
 
 /* logo Janaina*/
 
-.site-header {
-  position: absolute; 
+.header_logo {
   top: 1.2rem;
   right: 1.2rem;
   z-index: 100;
 }
 
-.logo {
+.header_image {
   height: 16rem; 
   width: auto;
   max-width: 150px; 
   display: block;
 }
+

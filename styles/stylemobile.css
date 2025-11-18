@@ -8,7 +8,7 @@
   }
 
   /* --- RESET DE LAYOUT PRINCIPAL --- */
-  .content {
+  .hero {
     display: block; 
     padding: 2rem 1.5rem;
     gap: 0;
@@ -27,7 +27,7 @@
     margin-bottom: 2.5rem;
   }
 
-  aside img {
+  img.image_hero {
     height: auto;
     width: 80%;
     max-width: 300px;
@@ -35,7 +35,7 @@
     margin: 0 auto 1.5rem;
   }
 
-  aside h1 {
+  .title {
     font-size: 4.2rem; 
     line-height: 1.2;
     margin: 0;
@@ -57,30 +57,30 @@
   }
 
   /* --- BOTÕES DE AÇÃO --- */
-  main .actions {
+.actions {
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
   }
 
-  main .actions a {
+  .actions a {
     height: 5rem;
     font-size: 2rem;
     margin-top: 0; 
   }
 
-  main .actions a + a {
+   .actions a + a {
     margin-top: 1rem;
   }
 
   /* --- FOOTER DO MAIN --- */
 
-  main footer p {
+  .footer_registro  {
     font-size: 1.5rem;
     margin-top: 3rem;
   }
 
-  main footer a {
+  .footer_registro a {
     font-size: 1.7rem;
     margin-top: 1rem;
   }
@@ -164,17 +164,20 @@
     margin: 1.8rem 0;
     width: 100%;
   }
-}
 
 /*Rodapé - assinatura*/
 
-.site-header {
-  top: 0.01rem;
-  left: 0.01rem;
-  z-index: 100;
+.assinatura_rodape a {
+  text-decoration: underline;
+  margin-left: 0.25rem;
+  font-weight: bolder;
 }
 
-.logo {
-  height: 10rem; /* ajuste conforme sua logo */
+
+.header_image {
+  height: 9.1rem; 
   border-radius: 50%;
+
+}
+
 }

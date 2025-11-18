@@ -5,31 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>We Form</title>
 
-    <link rel="stylesheet" href="../style/style.css">
+   <link rel="stylesheet" href="../styles/style.css">
 
-     <link rel="stylesheet" href="../style/stylemobile.css">
-
+<link rel="stylesheet" href="../styles/stylemobile.css">
+     
     <!--Fontes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <!--Icones de CSS-->
-    <link rel="stylesheet" href="../fontawesome/css/all.css">
+<!--Icones de CSS-->
+<link rel="stylesheet" href="../vendor/fontawesome/css/all.css">
 
-    <!--Favicon-->
+<!--Favicon-->
     <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
-
+    
 </head>
 <body>
-    <header class="site-header">
-    <img src="../assets/logo.jpg" alt="Logo JanainaMeira" class="logo">
+     <!--Logo do desenvolvedor do site-->
+      <header class="header_logo">
+    <img src="../assets/logo.jpg" alt="Logo JanainaMeira" class="header_image">
   </header>
-    <div class="content">
-        <aside>
-            <img src="../assets/protecao_animais2.png" alt="Imagem hero com animais" >
 
-            <h1> <span>We</span> Form</h1>
+      <!--Imagem do site-->
+
+    <div class="hero">
+        <aside>
+            <img src="../assets/protecao_animais2.png" alt="Imagem hero com animais" class="image_hero" >
+
+            <h1 class="title"> <span>We</span> Form</h1>
 
         </aside>
         <!--Conteudo do formulário da página principal -->
@@ -39,13 +43,16 @@
                     <i class="fa-solid fa-angle-left">
                     </i>
                 </a>
-                 <h2>Campo de <span>Atuação</span></h2>
+                 <h2>Nova <span>entidade</span></h2>
             </header>
+
              <form>
-                <label for="input-field"> Pesquisar Atuação</label>
+                <label for="input-name"> Nome</label>
+                <input type="text" id="input-name">
+                <label for="input-field"> Campo de Atuação</label>
                 <div class="selectdiv">
                     <select id="input-field">
-                        <option value="" > </option>
+                        <option value="" > Selecione uma opção</option>
                         <option value="abrigo">Abrigo de animais - Pet Lar</option>
                         <option value="abrigoc">Abrigo de animais - Caezins</option>
                         <option value="alimentacao">Centro de alimentação - Nosso prato</option>
@@ -54,21 +61,18 @@
                     
                     </select>
                 </div>
-
-                <div>
-                    <h3>OU </h3>
-                    <p><span>Cadatre novo campo de atuação</span></p>
-                </div>
-                       
                 
                 <div class="points">
-                    <label for="input-points"> Campo de atuação</label>
+                    <label for="input-points"> Ponto de Coleta</label>
                     <input type="text" id="input-points">
-                                   </div>
+                    <button >
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </button>
+                </div>
              </form>
 
              <div class="actions">
-                <a href="#">Cadastrar </a>
+                <a href="">Cadastrar </a>
             </div>
 
             
@@ -78,7 +82,7 @@
 
     </div>
 
- <footer class="JanainaMeira">
+<footer class="assinatura_rodape">
   Code by &copy;<a href="https://github.com/JanainaMmeira" target="_blank">JanainaMeira&reg</a>
 </footer>
     
